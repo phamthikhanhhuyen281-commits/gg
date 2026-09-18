@@ -1,45 +1,61 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navbar } from './components/Navbar';
-import { Home } from './components/Home';
-import { ListeningSection } from './components/ListeningSection';
-import { SpeakingSection } from './components/SpeakingSection';
-import { ReadingSection } from './components/ReadingSection';
-import { WritingSection } from './components/WritingSection';
-import { VocabularySection } from './components/VocabularySection';
+import React from 'react';
 
-export default function App() {
+function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-white">
-        <Navbar />
-        <main className="pb-20">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/listening" element={<ListeningSection />} />
-            <Route path="/speaking" element={<SpeakingSection />} />
-            <Route path="/reading" element={<ReadingSection />} />
-            <Route path="/writing" element={<WritingSection />} />
-            <Route path="/vocabulary" element={<VocabularySection />} />
-          </Routes>
-        </main>
+    <div style={{
+      fontFamily: 'Arial, sans-serif',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      minHeight: '100vh',
+      backgroundColor: '#f3f4f6',
+      padding: '20px',
+      textAlign: 'center'
+    }}>
+      <div style={{
+        background: 'white',
+        padding: '30px',
+        borderRadius: '15px',
+        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+        maxWidth: '400px',
+        width: '100%'
+      }}>
+        <h1 style={{ color: '#1e3a8a', marginBottom: '10px', fontSize: '24px' }}>
+          My Google AI Studio App
+        </h1>
+        <p style={{ color: '#4b5563', marginBottom: '25px', fontSize: '15px' }}>
+          Chào mừng bạn đến với ứng dụng AI của mình. Dự án đang trong quá trình nâng cấp hệ thống.
+        </p>
         
-        <footer className="bg-slate-50 border-t border-slate-100 py-12">
-          <div className="max-w-7xl mx-auto px-4 text-center">
-             <div className="flex items-center justify-center gap-2 mb-4">
-                <div className="w-6 h-6 rounded bg-primary flex items-center justify-center italic text-white text-xs font-bold">H</div>
-                <span className="font-bold text-primary tracking-tight">HyPilot</span>
-             </div>
-             <p className="text-slate-400 text-sm mb-6 uppercase tracking-widest font-bold">Simple Tools. Serious Progress.</p>
-             <div className="flex justify-center gap-8 text-sm font-medium text-slate-500">
-                <a href="#" className="hover:text-primary transition-colors">Privacy</a>
-                <a href="#" className="hover:text-primary transition-colors">Terms</a>
-                <a href="#" className="hover:text-primary transition-colors">Contact</a>
-             </div>
-             <p className="mt-8 text-slate-300 text-xs text-center">© {new Date().getFullYear()} HyPilot EdTech. Built for real progress.</p>
-          </div>
-        </footer>
+        <div style={{ borderTop: '1px solid #e5e7eb', paddingTop: '20px' }}>
+          <p style={{ color: '#1f2937', fontWeight: 'bold', marginBottom: '15px', fontSize: '14px' }}>
+            🎁 Ủng hộ Admin bằng cách mở tài khoản MB Bank nhận ngay 30k miễn phí:
+          </p>
+          
+          <a 
+            href="https://shorten.asia/1pfrFBFK" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              backgroundColor: '#0044ff',
+              color: 'white',
+              fontWeight: 'bold',
+              textDecoration: 'none',
+              padding: '12px 24px',
+              borderRadius: '8px',
+              fontSize: '15px',
+              boxShadow: '0 4px 10px rgba(0, 68, 255, 0.3)',
+              transition: 'background-color 0.2s'
+            }}
+          >
+            Đăng Ký MB Bank Nhận 30K
+          </a>
+        </div>
       </div>
-    </Router>
+    </div>
   );
 }
 
+export default App;
