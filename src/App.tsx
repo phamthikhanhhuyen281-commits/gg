@@ -25,7 +25,7 @@ function App() {
           Tổng Hợp App Nhận Thưởng Miễn Phí
         </h1>
         <p style={{ color: '#4b5563', marginBottom: '25px', fontSize: '14px' }}>
-          Chọn một trong các ngân hàng dưới đây để tải app, mở tài khoản online tại nhà hoàn toàn miễn phí và nhận quà tặng!
+          Chọn một trong các ứng dụng dưới đây để tải app, mở tài khoản online tại nhà hoàn toàn miễn phí và nhận quà tặng!
         </p>
         
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
@@ -51,10 +51,10 @@ function App() {
           {/* NÚT 2: VPBANK */}
           <div style={{ padding: '15px', border: '1px solid #e5e7eb', borderRadius: '10px', textAlign: 'left' }}>
             <p style={{ margin: '0 0 5px 0', fontWeight: 'bold', color: '#1f2937', fontSize: '14px' }}>
-              💚 Ngân hàng số VPBank NEO (Dành cho lứa tuổi 18+)
+              💚 Ngân hàng số VPBank NEO (Dành cho lứa tuổi 15+)
             </p>
             <p style={{ margin: '0 0 10px 0', color: '#6b7280', fontSize: '12px' }}>
-              👉 Lưu ý: Nhập mã giới thiệu <span style={{ fontWeight: 'bold', color: 'red' }}>ATUSER9724</span> khi đăng ký trong ứng dụng nhé.
+              👉 Lưu ý: Xóa chữ DAOSALE ở ô mã nhân viên (nếu có), nhập mã giới thiệu <span style={{ fontWeight: 'bold', color: 'red' }}>ATUSER9724</span> và nạp 10k vào ZaloPay trong 2 ngày nhé.
             </p>
             <a 
               href="https://shorten.asia/Ra3z4gHf" 
@@ -63,6 +63,24 @@ function App() {
               style={{ display: 'block', backgroundColor: '#10b981', color: 'white', fontWeight: 'bold', textDecoration: 'none', padding: '10px', borderRadius: '6px', fontSize: '14px', textAlign: 'center' }}
             >
               Đăng Ký VPBank (Nhận Quà Khủng)
+            </a>
+          </div>
+
+          {/* NÚT 3: ĐƯỜNG LINK MỚI THÊM VÀO */}
+          <div style={{ padding: '15px', border: '1px solid #e5e7eb', borderRadius: '10px', textAlign: 'left' }}>
+            <p style={{ margin: '0 0 5px 0', fontWeight: 'bold', color: '#1f2937', fontSize: '14px' }}>
+              🎁 Ứng dụng nhận quà thành viên mới
+            </p>
+            <p style={{ margin: '0 0 10px 0', color: '#6b7280', fontSize: '12px' }}>
+              👉 Hướng dẫn: Bấm vào nút dưới đây để mở ứng dụng, thực hiện đăng ký tài khoản mới và làm theo các yêu cầu để nhận tiền thưởng.
+            </p>
+            <a 
+              href="https://shorten.asia/2wK33xSK" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              style={{ display: 'block', backgroundColor: '#ea580c', color: 'white', fontWeight: 'bold', textDecoration: 'none', padding: '10px', borderRadius: '6px', fontSize: '14px', textAlign: 'center' }}
+            >
+              Bấm Để Tải & Nhận Thưởng
             </a>
           </div>
 
