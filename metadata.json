@@ -1,0 +1,6 @@
+{
+  "name": "HyPilot",
+  "description": "Simple Tools. Serious Progress. A premium edtech platform for micro-skill English training.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["Listening Exercises", "Speaking Prompts", "Writing Upgrades", "Vocabulary LexiVault"]
+}
